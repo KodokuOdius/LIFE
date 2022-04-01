@@ -137,7 +137,7 @@ class Universe():
                 
                 if total_sum == 3 and new[i][j] == 0:
                     new[i][j] = 1
-                elif total_sum == 2 and new[i][j] == 1:
+                elif total_sum in [2, 3] and new[i][j] == 1:
                     continue
                 else:
                     new[i][j] = 0
