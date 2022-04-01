@@ -21,3 +21,5 @@ Need to put in code size of crean you want and speed of Game (FPS)
 ToDO: auto put sixe of screen
 
 - What I've done!
+
+![alt text](/img/1stage.jpg)
