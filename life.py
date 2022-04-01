@@ -96,7 +96,7 @@ class Universe():
     def first_generate(self):
         from random import sample as s
 
-        first_cells = self.width * self.height * 0.6
+        first_cells = self.width * self.height * 0.1
 
         popl = [
             (i, j) 
@@ -114,8 +114,8 @@ class Universe():
             for j in range(self.width):
                 el = self.window[i][j]
                 print(
-                    '\x1b[6;30;42m' + str(el) + '\x1b[0m' if el == 1 
-                    else '\x1b[6;30;41m' + str(el) + '\x1b[0m', 
+                    '\x1b[6;30;42m' + '+' + '\x1b[0m' if el == 1 
+                    else '\x1b[6;30;41m' + '-' + '\x1b[0m', 
                     end=''
                 )
             print()
@@ -171,7 +171,7 @@ if __name__ == "__main__":
 
     FPS = 120
 
-    life = Universe(55, 15, FPS)
+    life = Universe(100, 45, FPS)
 
     life.start()
 
